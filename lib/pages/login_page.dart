@@ -127,9 +127,9 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                         SizedBox(height: 30),
-                        FlatButton(
-                          padding: EdgeInsets.symmetric(
-                              vertical: 12, horizontal: 80),
+                        ElevatedButton(
+                          // padding: EdgeInsets.symmetric(
+                          //     vertical: 12, horizontal: 80),
                           onPressed: () {
                             if (validateAndSave()) {
                               print(loginRequestModel.toJson());
@@ -148,13 +148,13 @@ class _LoginPageState extends State<LoginPage> {
                                   if (value.token.isNotEmpty) {
                                     final snackBar = SnackBar(
                                         content: Text("Login Successful"));
-                                    scaffoldKey.currentState
-                                        .showSnackBar(snackBar);
+                                    // scaffoldKey.currentState
+                                    //     .showSnackBar(snackBar);
                                   } else {
                                     final snackBar =
                                         SnackBar(content: Text(value.error));
-                                    scaffoldKey.currentState
-                                        .showSnackBar(snackBar);
+                                    // scaffoldKey.currentState
+                                    //     .showSnackBar(snackBar);
                                   }
                                 }
                               });
@@ -164,8 +164,8 @@ class _LoginPageState extends State<LoginPage> {
                             "Login",
                             style: TextStyle(color: Colors.white),
                           ),
-                          color: Theme.of(context).accentColor,
-                          shape: StadiumBorder(),
+                          // color: Theme.of(context).accentColor,
+                          // shape: StadiumBorder(),
                         ),
                         SizedBox(height: 15),
                       ],
